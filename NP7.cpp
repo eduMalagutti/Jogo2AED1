@@ -121,7 +121,7 @@ void PrintInOrder(node *raiz)
     if (raiz != nullptr)
     {
         PrintInOrder(raiz->esq);
-        cout << raiz->info << " ";
+        cout << raiz->info << " / ";
         PrintInOrder(raiz->dir);
     }
 }
