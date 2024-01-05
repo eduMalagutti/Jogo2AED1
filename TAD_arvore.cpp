@@ -65,7 +65,7 @@ void PrintArv(node *raiz)
 }
 
 
-// Codigo de teste: tudo que ta aqui pra baixo pode ir para o arquivo JogoMain.cpp depois.
+// Codigo de teste: tudo que ta aqui pra baixo pode ir para o arquivo JogoMain.cpp depois. E esse pode virar um .hpp (ai tem que tirar a main)
 //
 // Instrução de uso: para inserir node na arvore, use as funções insereSim, InsereNaosei e InsereNao. Para cada ponteiro saindo de um node pai
 // do mesmo jeito que eu fiz a raíz e o segundo nível.
