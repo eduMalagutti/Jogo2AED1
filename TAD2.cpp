@@ -241,7 +241,7 @@ int main()
 
 
 
-    // Defensivo = Não sei
+    // -------Título = Não sei;Defensivo = Não sei-------
     InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
     InsereNaosei(p[], p[], "Eh lindo e idolo?");
     InsereNao(p[], p[], "Eh lindo e idolo?");
@@ -336,7 +336,7 @@ int main()
     //Fim Santos
     //FIm ÍDolo e lindo
 
-    //Caminho Defensivo Não
+    // ---------Título = Não sei; Defensivo = Não------------
     InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
     InsereNao(p[],p[],"Jogou no time estreante da série B (Santos)?");
     InsereNaosei(p[],p[],"Jogou no time estreante da série B (Santos)?");
@@ -388,7 +388,7 @@ int main()
     InsereSim(p[],j[],"Veríssimo");
 
 
-    //Defensivo = não sei
+    //-------Título = Não;Defensivo = não sei ---------
     InsereSim(p[],j[],"Moscardo");
     InsereNao(p[],p[],"Substituto do Cássio?");
     InsereNaosei(p[],p[],"Substituto do Cássio?");
@@ -430,7 +430,7 @@ int main()
     InsereSim(p[],j[],"Luan");
     //Fim Santos
 
-    //Caminho Não defensivo
+    //---------Título = Não; Defensivo = Não ---------------
     InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
     InsereNao(p[],p[],"Paraguaio menos importante do time?");
     InsereNaosei(p[],p[],"Paraguaio menos importante do time?");
