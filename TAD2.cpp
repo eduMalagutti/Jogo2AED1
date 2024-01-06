@@ -115,6 +115,7 @@ int main()
     InsereNao(p[3], p[12],"Eh calvo? (Tem duas entradas pro show da Taylor swift)");
     
     //Agora vou fazer por Arvore e não por nível, vai ficar bem mais fácil de perceber erros
+    //Vamos fazer desse jeito, 3 linhas seguidas para arrumar os ponteiros de um node e depois pula a liinha e faz o proximo
 
     // ---- Título-Sim ; Defensivo-Sim ----
     InsereSim(p[4], p[13], "Jogou muitos anos com a camisa do Corinthians");
@@ -128,6 +129,8 @@ int main()
     InsereSim(p[14], j[2], "Cassio");
     InsereNaosei(p[14], p[15], "Aposentou o Hazard");
     InsereNao(p[14], p[15], "Aposentou o Hazard");
+
+
 
     PrintArv(p[0]);
 }
