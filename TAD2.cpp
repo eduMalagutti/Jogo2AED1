@@ -111,7 +111,7 @@ int main()
     InsereNao(p[2], p[9],"Eh calvo? (Tem duas entradas pro show da Taylor swift)");
     //sub: Titulo-Nao
     InsereSim(p[3], p[10] , "quase foi vendido pro psg?");
-    InsereNaosei(p[3], p[11],"foi vendido pro psg?");
+    InsereNaosei(p[3], p[11],"quase foi vendido pro psg?");
     InsereNao(p[3], p[12],"Eh calvo? (Tem duas entradas pro show da Taylor swift)");
     
     //Agora vou fazer por Arvore e não por nível, vai ficar bem mais fácil de perceber erros
@@ -122,13 +122,345 @@ int main()
     InsereNaosei(p[4], p[14], "Eh lindo e idolo?");
     InsereNao(p[4], p[14], "Eh lindo e idolo?");
     
-    InsereSim(p[13], j[0], "Gil Zagueiro");
-    InsereNaosei(p[13], j[1], "Balbuena");
-    InsereNao(p[13], j[1], "Balbuena");
+    InsereSim(p[5], j[0], "Gil Zagueiro");
+    InsereNaosei(p[5], j[1], "Balbuena");
+    InsereNao(p[5], j[1], "Balbuena");
 
-    InsereSim(p[14], j[2], "Cassio");
-    InsereNaosei(p[14], p[15], "Aposentou o Hazard");
-    InsereNao(p[14], p[15], "Aposentou o Hazard");
+    InsereSim(p[6], j[2], "Cassio");
+    InsereNaosei(p[6], p[15], "Aposentou o Hazard");
+    InsereNao(p[6], p[16], "Aposentou o Hazard");
+
+    InsereSim(p[7],j[3],"Fagner");
+    InsereNao(p[7],p[17],"É careca?");
+    InsereNaosei(p[7],p[17],"É careca?");
+
+    InsereSim(p[8],j[4],"Fabio Santos");
+    InsereNao(p[8],p[18],"Gil Zagueiro?");
+    InsereNaosei(p[8],p[18],"Gil Zagueiro?");
+
+    InsereSim(p[9],j[5],"Gil Zagueiro");
+    InsereNaosei(p[9],j[6],"Gil Zagueiro");
+    InsereNao(p[9],j[6],"Gil Zagueiro");
+
+    // -----Título Sim; Defensivo = Não sei
+    InsereSim(p[10],j[7],"Balbuena");
+    InsereNaosei(p[10], p[19], "Eh lindo e idolo?");
+    InsereNao(p[10], p[19], "Eh lindo e idolo?");
+
+    InsereSim(p[11],j[8],"Cássio");
+    InsereNao(p[11],p[20],"Quebra perna dos adversários");
+    InsereNaosei(p[11],p[20],"Quebra perna dos adversários");
+
+    InsereSim(p[12],j[9],"Fagner");
+    InsereNao(p[12],p[21],"É careca?");
+    InsereNaosei(p[12],p[21],"É careca?");
+
+    InsereSim(p[13],j[10],"Fabio Santos");
+    InsereNao(p[13],p[22],"Gil Zagueiro?");
+    InsereNaosei(p[13],p[22],"Gil Zagueiro?");
+
+    InsereSim(p[14],j[11],"Gil Zagueiro");
+    InsereNao(p[14],p[23],"Melhores em campos atualmente");
+    InsereNaosei(p[14],p[23],"Melhores em campos atualmente");
+
+    InsereSim(p[15],p[24],"É craque de bola?");
+    InsereNao(p[15],p[25],"Ganhou mundial de 2012?");
+    InsereNaosei(p[15],p[25],"Ganhou mundial de 2012?");
+    // Caminho- Craque de Bola
+    InsereSim(p[16],j[12],"Renato Augusto");
+    InsereNao(p[16],p[26],"Entre ele e seu irmão, ele é o bagre?");
+    InsereNaosei(p[16],p[26],"Entre ele e seu irmão, ele é o bagre?");
+
+    InsereSim(p[17],j[13],"Ángel Romero");
+    //Final Craque de Bola
+
+    //Caminho Ganhou Mundial 2012
+    InsereSim(p[18],j[14],"Paulinho");
+    InsereNao(p[18],p[27],"Não fede nem cheira?");
+    InsereNaosei(p[18],p[27],"Não fede nem cheira?");  
+
+    InsereSim(p[19],j[15],"Maycon");
+    //Final caminho Mundial
+
+    // ----Título = Sim; Defensivo = Não
+    InsereSim(p[20],p[28],"É craque de bola?");
+    InsereNao(p[29],p[29],"Ganhou mundial de 2012?");
+    InsereNaosei(p[20],p[29],"Ganhou mundial de 2012?");
+    //Caminho é craque
+    InsereSim(p[21],j[16],"Renato Augusto");
+    InsereNao(p[21],p[30],"Entre ele e seu irmão, ele é o bagre?");
+    InsereNaosei(p[21],p[30],"Entre ele e seu irmão, ele é o bagre?");
+
+    InsereSim(p[22],j[17],"Ángel Romero");
+    //Final Craque de Bola
+
+    //Caminho Ganhou Mundial 2012
+    InsereSim(p[23],j[18],"Paulinho");
+    InsereNao(p[23],p[31],"Não fede nem cheira?");
+    InsereNaosei(p[23],p[31],"Não fede nem cheira?");  
+
+    InsereSim(p[24],j[19],"Maycon");
+    //Final caminho Mundial
+
+    // --------Título = Não sei; Defesivo = Sim ---------
+    InsereSim(p[25],j[20],"Balbuena");
+    InsereNaosei(p[25], p[32], "Eh lindo e idolo?");
+    InsereNao(p[25], p[32], "Eh lindo e idolo?");
+
+    InsereSim(p[26],j[21],"Cássio");
+    InsereNao(p[26],p[33],"Quebra perna dos adversários");
+    InsereNaosei(p[26],p[33],"Quebra perna dos adversários");
+
+    InsereSim(p[27],j[22],"Fagner");
+    InsereNao(p[27],p[34],"É careca?");
+    InsereNaosei(p[27],p[34],"É careca?");
+
+    InsereSim(p[28],j[23],"Fabio Santos");
+    InsereNao(p[28],p[35],"Gil Zagueiro?");
+    InsereNaosei(p[28],p[35],"Gil Zagueiro?");
+
+    InsereSim(p[29],j[24],"Gil Zagueiro");
+    InsereNao(p[29],p[36],"Quase foi vendido para o PSG?");
+    InsereNaosei(p[29],p[36],"Quase foi vendido para o PSG?");
+
+    InsereSim(p[],j[],"Moscardo");
+    InsereNao(p[],p[],"Substituto do Cássio?");
+    InsereNaosei(p[],p[],"Substituto do Cássio?");
+
+    InsereSim(p[],j[],"Carlos Miguel");
+    InsereNao(p[],p[],"Argentino?");
+    InsereNaosei(p[],p[],"Argentino?");
+
+    InsereSim(p[],j[],"Fausto Vera");
+    InsereNao(p[],p[],"Substituto do Balbuena?");
+    InsereNaosei(p[],p[],"Substituto do Balbuena?");
+
+    InsereSim(p[],j[],"Veríssimo");
+    
+    
+
+
+
+    // Defensivo = Não sei
+    InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
+    InsereNaosei(p[], p[], "Eh lindo e idolo?");
+    InsereNao(p[], p[], "Eh lindo e idolo?");
+    //Caminho Loira
+    InsereSim(p[],j[],"Róger Guedes");
+    InsereNaosei(p[],j[],"Gil Zagueiro");
+    InsereNao(p[],j[],"Gil Zagueiro");
+
+    InsereSim(p[],j[],"Gil Zagueiro");
+    InsereNao(p[],p[],"Paraguaio?");
+    InsereNaosei(p[],p[],"Paraguaio?");
+
+    InsereSim(p[],j[],"Balbuena");
+    InsereNao(p[],p[],"Não tem nenhuma característica relevante?");
+    InsereNaosei(p[],p[],"Não tem nenhuma característica relevante?");
+
+    InsereSim(p[],j[],"Giuliano");
+    InsereNao(p[],j[],"Giuliano");
+    InsereNaosei(p[],j[],"Giuliano");
+    //fim Loira
+
+    //Caminho Ídolo e lindo
+    InsereSim(p[], j[]], "Cassio");
+    InsereNaosei(p[], p[], "Aposentou o Hazard e Constuma quebrar a perna dos jogadores");
+    InsereNao(p[], p[], "Aposentou o Hazard e costuma quebrar a perna dos jogadores");
+
+    InsereSim(p[],j[],"Fagner");
+    InsereNao(p[],p[],"É careca?");
+    InsereNaosei(p[],p[],"É careca?");
+
+    InsereSim(p[],j[],"Fabio Santos");
+    InsereNao(p[],p[],"Gil Zagueiro?");
+    InsereNaosei(p[],p[],"Gil Zagueiro?");
+
+    InsereSim(p[],j[],"Gil Zagueiro");
+    InsereNao(p[],p[],"É craque da bola?");
+    InsereNaosei(p[],p[],"É craque da bola?");
+
+    InsereSim(p[],j[],"Renato Augusto");
+    InsereNao(p[],p[],"Ganhou Mundial de 2012?");
+    InsereNaosei(p[],p[],"Ganhou Mundial de 2012?");
+
+    InsereSim(p[],j[],"Paulinho");
+    InsereNao(p[],p[],"Entre ele e seu irmão, ele é o bagre?");
+    InsereNaosei(p[],p[],"Entre ele e seu irmão, ele é o bagre?");
+
+    InsereSim(p[22],j[17],"Ángel Romero");
+    InsereSim(p[3], p[10] , "quase foi vendido pro psg?");
+    InsereNaosei(p[3], p[11],"quase foi vendido pro psg?");
+
+    InsereSim(p[],j[],"Moscardo");
+    InsereNao(p[],p[],"Substituto do Cássio?");
+    InsereNaosei(p[],p[],"Substituto do Cássio?");
+
+    InsereSim(p[],j[],"Carlos Miguel");
+    InsereNao(p[],p[],"Argentino?");
+    InsereNaosei(p[],p[],"Argentino?");
+
+    InsereSim(p[],j[],"Fausto Vera");
+    InsereNao(p[],p[],"Substituto do Balbuena?");
+    InsereNaosei(p[],p[],"Substituto do Balbuena?");
+
+    InsereSim(p[],j[],"Veríssimo");
+    InsereNao(p[],p[],"É calvo??");
+    InsereNaosei(p[],p[],"É calvo??");
+
+    InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
+    InsereNao(p[],p[],"Jogou no time estreante da série B (Santos)?");
+    InsereNaosei(p[],p[],"Jogou no time estreante da série B (Santos)?");
+    //Caminho Loira
+    InsereSim(p[],j[],"Rogér Guedes");
+    //FIm Loira
+
+    //Caminho Santos
+    InsereSim(p[],j[],"Giuliano");
+    InsereNao(p[],p[],"Paraguaio menos importante do time?");
+    InsereNaosei(p[],p[],"Paraguaio menos importante do time?");
+
+    InsereSim(p[],j[],"Rojas");
+    InsereNao(p[],p[],"Perito em perder gol?");
+    InsereNaosei(p[],p[],"Perito em perder gol?");
+
+    InsereSim(p[],p[],"Titúlo exclusivo de bagre d'or?");
+    InsereNao(p[],j[],"Róger Guedes");
+    InsereNaosei(p[],j[],"Renato Augusto");
+
+    InsereSim(p[],j[],"Yuri ALberto");
+    InsereNao(p[],p[],"Foi pego a paulada pela torcida no motel?");
+    InsereNaosei(p[],p[],"Foi pego a paulada pela torcida no motel?");
+
+    InsereSim(p[],j[],"Luan");
+    //Fim Santos
+    //FIm ÍDolo e lindo
+
+    //Caminho Defensivo Não
+    InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
+    InsereNao(p[],p[],"Jogou no time estreante da série B (Santos)?");
+    InsereNaosei(p[],p[],"Jogou no time estreante da série B (Santos)?");
+    //Caminho Loira
+    InsereSim(p[],j[],"Rogér Guedes");
+    //FIm Loira
+
+    //Caminho Santos
+    InsereSim(p[],j[],"Giuliano");
+    InsereNao(p[],p[],"Paraguaio menos importante do time?");
+    InsereNaosei(p[],p[],"Paraguaio menos importante do time?");
+
+    InsereSim(p[],j[],"Rojas");
+    InsereNao(p[],p[],"Perito em perder gol?");
+    InsereNaosei(p[],p[],"Perito em perder gol?");
+
+    InsereSim(p[],p[],"Titúlo exclusivo de bagre d'or?");
+    InsereNao(p[],p[],"É craque da bola");
+    InsereNaosei(p[],p[],"É craque da bola");
+    //caminho craque
+    InsereSim(p[],j[],"Renato Augusto");
+    InsereNao(p[],j[],"Ángel Romero");
+    InsereNaosei(p[],j[],"Ángel Romero");
+    //fim caminho bagre
+
+    //caminho bagre
+    InsereSim(p[],j[],"Yuri ALberto");
+    InsereNao(p[],p[],"Foi pego a paulada pela torcida no motel?");
+    InsereNaosei(p[],p[],"Foi pego a paulada pela torcida no motel?");
+
+    InsereSim(p[],j[],"Luan");
+    //fim bagre
+
+
+
+    // --------Título = Não; Defensivo = Sim ------------
+    InsereSim(p[],j[],"Moscardo");
+    InsereNao(p[],p[],"Substituto do Cássio?");
+    InsereNaosei(p[],p[],"Substituto do Cássio?");
+
+    InsereSim(p[],j[],"Carlos Miguel");
+    InsereNao(p[],p[],"Argentino?");
+    InsereNaosei(p[],p[],"Argentino?");
+
+    InsereSim(p[],j[],"Fausto Vera");
+    InsereNao(p[],p[],"Substituto do Balbuena?");
+    InsereNaosei(p[],p[],"Substituto do Balbuena?");
+
+    InsereSim(p[],j[],"Veríssimo");
+
+
+    //Defensivo = não sei
+    InsereSim(p[],j[],"Moscardo");
+    InsereNao(p[],p[],"Substituto do Cássio?");
+    InsereNaosei(p[],p[],"Substituto do Cássio?");
+
+    InsereSim(p[],j[],"Carlos Miguel");
+    InsereNao(p[],p[],"Argentino?");
+    InsereNaosei(p[],p[],"Argentino?");
+
+    InsereSim(p[],j[],"Fausto Vera");
+    InsereNao(p[],p[],"Substituto do Balbuena?");
+    InsereNaosei(p[],p[],"Substituto do Balbuena?");
+
+    InsereSim(p[],j[],"Veríssimo");
+    InsereNao(p[],p[],"É calvo??");
+    InsereNaosei(p[],p[],"É calvo??");
+
+    InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
+    InsereNao(p[],p[],"Jogou no time estreante da série B (Santos)?");
+    InsereNaosei(p[],p[],"Jogou no time estreante da série B (Santos)?");
+    //Caminho Loira
+    InsereSim(p[],j[],"Rogér Guedes");
+    //FIm Loira
+
+    //Caminho Santos
+    InsereSim(p[],j[],"Giuliano");
+    InsereNao(p[],p[],"Paraguaio menos importante do time?");
+    InsereNaosei(p[],p[],"Paraguaio menos importante do time?");
+
+    InsereSim(p[],j[],"Rojas");
+    InsereNao(p[],p[],"Perito em perder gol?");
+    InsereNaosei(p[],p[],"Perito em perder gol?");
+
+    InsereSim(p[],p[],"Titúlo exclusivo de bagre d'or?");
+
+    InsereSim(p[],j[],"Yuri ALberto");
+    InsereNao(p[],p[],"Foi pego a paulada pela torcida no motel?");
+    InsereNaosei(p[],p[],"Foi pego a paulada pela torcida no motel?");
+
+    InsereSim(p[],j[],"Luan");
+    //Fim Santos
+
+    //Caminho Não defensivo
+    InsereSim(p[],p[],"Era a loirinha mais amada e se vendeu pra Arábia?");
+    InsereNao(p[],p[],"Paraguaio menos importante do time?");
+    InsereNaosei(p[],p[],"Paraguaio menos importante do time?");
+    //Caminho Loira
+    InsereSim(p[],j[],"Rogér Guedes");
+    //FIm Loira
+
+    //Caminho Paraguai
+    InsereSim(p[],j[],"Rojas");
+    InsereNao(p[],p[],"Perito em perder gol?");
+    InsereNaosei(p[],p[],"Perito em perder gol?");
+
+    InsereSim(p[],p[],"Titúlo exclusivo de bagre d'or?");
+    InsereNao(p[],p[],"Não tem nenhuma característica relevante?");
+    InsereNaosei(p[],p[],"Não tem nenhuma característica relevante?");
+
+    //caminho bagre
+    InsereSim(p[],j[],"Yuri ALberto");
+    InsereNao(p[],p[],"Foi pego a paulada pela torcida no motel?");
+    InsereNaosei(p[],p[],"Foi pego a paulada pela torcida no motel?");
+
+    InsereSim(p[],j[],"Luan");
+    //fim caminho bagre
+
+    //caminho relevância
+    InsereSim(p[],j[],"Giuliano");
+    InsereNao(p[],j[],"Giuliano");
+    InsereNaosei(p[],j[],"Giuliano");
+    //fim caminho relevÇancia
+    //fim caminho paraguai
 
 
 
