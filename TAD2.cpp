@@ -34,19 +34,22 @@ void Insere(node *&paiPtr, node *&filho, string info)
 
 }
 
-void InsereSim(node *&paiPtr, node *&filho, string info)
+string InsereSim(node *&paiPtr, node *&filho, string info)
 {
     Insere(paiPtr->sim, filho, info);
+    return paiPtr->info;
 }
 
-void InsereNaosei(node *&paiPtr, node *&filho, string info)
+string InsereNaosei(node *&paiPtr, node *&filho, string info)
 {
     Insere(paiPtr->naoSei, filho, info);
+    return paiPtr->info;
 }
 
-void InsereNao(node *&paiPtr, node *&filho, string info)
+string InsereNao(node *&paiPtr, node *&filho, string info)
 {
     Insere(paiPtr->nao, filho, info);
+    return paiPtr->info;
 }
 
 void PrintArv(node *raiz)
@@ -117,43 +120,43 @@ int main()
     //Agora vou fazer por Arvore e não por nível, vai ficar bem mais fácil de perceber erros
     //Vamos fazer desse jeito, 3 linhas seguidas para arrumar os ponteiros de um node e depois pula a liinha e faz o proximo
 
-    // ---- Título-Sim ; Defensivo-Sim ----
+    // --------- Título= Sim ; Defensivo = Sim ---------
     InsereSim(p[4], p[13], "Jogou muitos anos com a camisa do Corinthians");
     InsereNaosei(p[4], p[14], "Eh lindo e idolo?");
     InsereNao(p[4], p[14], "Eh lindo e idolo?");
     
-    InsereSim(p[5], j[0], "Gil Zagueiro");
-    InsereNaosei(p[5], j[1], "Balbuena");
-    InsereNao(p[5], j[1], "Balbuena");
+    InsereSim(p[13], j[0], "Gil Zagueiro");
+    InsereNaosei(p[13], j[1], "Balbuena");
+    InsereNao(p[13], j[1], "Balbuena");
 
-    InsereSim(p[6], j[2], "Cassio");
-    InsereNaosei(p[6], p[15], "Aposentou o Hazard");
-    InsereNao(p[6], p[16], "Aposentou o Hazard");
+    InsereSim(p[14], j[2], "Cassio");
+    InsereNaosei(p[14], p[15], "Aposentou o Hazard");
+    InsereNao(p[14], p[15], "Aposentou o Hazard");
 
-    InsereSim(p[7],j[3],"Fagner");
-    InsereNao(p[7],p[17],"É careca?");
-    InsereNaosei(p[7],p[17],"É careca?");
+    InsereSim(p[15],j[3],"Fagner");
+    InsereNao(p[15],p[16],"É careca?");
+    InsereNaosei(p[15],p[16],"É careca?");
 
-    InsereSim(p[8],j[4],"Fabio Santos");
-    InsereNao(p[8],p[18],"Gil Zagueiro?");
-    InsereNaosei(p[8],p[18],"Gil Zagueiro?");
+    InsereSim(p[16],j[4],"Fabio Santos");
+    InsereNao(p[16],p[17],"Gil Zagueiro?");
+    InsereNaosei(p[16],p[17],"Gil Zagueiro?");
 
-    InsereSim(p[9],j[5],"Gil Zagueiro");
-    InsereNaosei(p[9],j[6],"Gil Zagueiro");
-    InsereNao(p[9],j[6],"Gil Zagueiro");
+    InsereSim(p[17],j[5],"Gil Zagueiro");
+    InsereNaosei(p[17],j[6],"Gil Zagueiro");
+    InsereNao(p[17],j[6],"Gil Zagueiro");
 
-    // -----Título Sim; Defensivo = Não sei
-    InsereSim(p[10],j[7],"Balbuena");
-    InsereNaosei(p[10], p[19], "Eh lindo e idolo?");
-    InsereNao(p[10], p[19], "Eh lindo e idolo?");
+    // --------- Título = Sim; Defensivo = Não sei ------------
+    InsereSim(p[5],j[7],"Balbuena");
+    InsereNaosei(p[5], p[18], "Eh lindo e idolo?");
+    InsereNao(p[5], p[18], "Eh lindo e idolo?");
 
     InsereSim(p[11],j[8],"Cássio");
-    InsereNao(p[11],p[20],"Quebra perna dos adversários");
-    InsereNaosei(p[11],p[20],"Quebra perna dos adversários");
+    InsereNao(p[11],p[19],"Quebra perna dos adversários");
+    InsereNaosei(p[11],p[19],"Quebra perna dos adversários");
 
     InsereSim(p[12],j[9],"Fagner");
-    InsereNao(p[12],p[21],"É careca?");
-    InsereNaosei(p[12],p[21],"É careca?");
+    InsereNao(p[12],p[20],"É careca?");
+    InsereNaosei(p[12],p[20],"É careca?");
 
     InsereSim(p[13],j[10],"Fabio Santos");
     InsereNao(p[13],p[22],"Gil Zagueiro?");
@@ -168,10 +171,10 @@ int main()
     InsereNaosei(p[15],p[25],"Ganhou mundial de 2012?");
     // Caminho- Craque de Bola
     InsereSim(p[16],j[12],"Renato Augusto");
-    InsereNao(p[16],p[26],"Entre ele e seu irmão, ele é o bagre?");
-    InsereNaosei(p[16],p[26],"Entre ele e seu irmão, ele é o bagre?");
+    InsereNao(p[16],p[26],"Entre ele e seu irmão, ele eh o bagre?");
+    InsereNaosei(p[16],p[26],"Entre ele e seu irmão, ele eh o bagre?");
 
-    InsereSim(p[17],j[13],"Ángel Romero");
+    InsereSim(p[26],j[13],"Ángel Romero");
     //Final Craque de Bola
 
     //Caminho Ganhou Mundial 2012
@@ -179,19 +182,19 @@ int main()
     InsereNao(p[18],p[27],"Não fede nem cheira?");
     InsereNaosei(p[18],p[27],"Não fede nem cheira?");  
 
-    InsereSim(p[19],j[15],"Maycon");
+    InsereSim(p[27],j[15],"Maycon");
     //Final caminho Mundial
 
     // ----Título = Sim; Defensivo = Não
     InsereSim(p[20],p[28],"É craque de bola?");
-    InsereNao(p[29],p[29],"Ganhou mundial de 2012?");
+    InsereNao(p[20],p[29],"Ganhou mundial de 2012?");
     InsereNaosei(p[20],p[29],"Ganhou mundial de 2012?");
     //Caminho é craque
     InsereSim(p[21],j[16],"Renato Augusto");
     InsereNao(p[21],p[30],"Entre ele e seu irmão, ele é o bagre?");
     InsereNaosei(p[21],p[30],"Entre ele e seu irmão, ele é o bagre?");
 
-    InsereSim(p[22],j[17],"Ángel Romero");
+    InsereSim(p[30],j[17],"Ángel Romero");
     //Final Craque de Bola
 
     //Caminho Ganhou Mundial 2012
@@ -199,7 +202,7 @@ int main()
     InsereNao(p[23],p[31],"Não fede nem cheira?");
     InsereNaosei(p[23],p[31],"Não fede nem cheira?");  
 
-    InsereSim(p[24],j[19],"Maycon");
+    InsereSim(p[31],j[19],"Maycon");
     //Final caminho Mundial
 
     // --------Título = Não sei; Defesivo = Sim ---------
