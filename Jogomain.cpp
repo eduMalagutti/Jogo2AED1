@@ -8,8 +8,9 @@ int main()
     cout << "                  AdivinhaTimao                 " << endl; // pesquisar o caracter de ã em ascii
     cout << "================================================" << endl
          << endl;
-    cout << "*TEXTO DE INTRODUÇÃO" << endl
-         << endl;
+    cout << "Advinha Timão é um jogo cativante que desafia os fãs do Corinthians a testarem seus conhecimentos sobre o elenco do time de 2023."<< endl;
+    cout <<" Inspirado no estilo do Akinator, este jogo oferece aos jogadores a oportunidade de escolherem um jogador do Corinthians e desafiarem o sistema adivinhador a descobrir quem é."<< endl;
+    cout << "Com uma gama exclusiva de jogadores do elenco do Timão em 2023, os usuários serão surpreendidos com a precisão do jogo ao tentar descobrir qual jogador foi escolhido, oferecendo uma experiência empolgante e divertida para os apaixonados pelo futebol e pelo Corinthians." << endl;
 
     string start, escolha;
     cout << "Para iniciar o jogo digite a letra s: ";
