@@ -89,7 +89,7 @@ int main()
             }
             else
             {
-                cout << raiz->info;
+                cout << raiz->info << ": ";
 
                 cin >> escolha;
                 while (escolha != "s" && escolha != "n" && escolha != "ns" && escolha != "x")
@@ -125,7 +125,7 @@ int main()
             }
             if (escolha == "s")
             {
-                cout << "AAAEEEEEE!!! Obrigado por jogar AdivinhaTimao!!!";
+                cout << "AAAEEEEEE!!! Obrigado por jogar AdivinhaTimao!!!" << endl;
                 cout << "Continuar? s ou n:";
                 cin >> start;
                 while (start != "s" && start != "n")
