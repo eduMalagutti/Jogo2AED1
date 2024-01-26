@@ -1,4 +1,4 @@
-//Arquivo criado para responder o item 5 da entrega para o professor
+// Arquivo criado para responder o item 5 da entrega para o professor
 #include <iostream>
 #include "TAD2.hpp"
 
@@ -6,23 +6,59 @@ using namespace std;
 
 int main()
 {
-    node *p[20];
-    for(int i = 0; i < 20;i++)
+    // Array de ponteiros, para cada node de pergunta
+    node *p[86];
+    for (int i = 0; i < 86; i++)
     {
         p[i] = nullptr;
     }
-    node *j = nullptr;
 
-    Cria(p[0], "ja ganhou algum titulo pelo clube?");
-    InsereSim(p[0], p[1], "eh do setor defensivo?");
-    InsereSim(p[1], p[4], "saiu do clube em 2023?");
-    InsereSim(p[4], p[13], "Jogou muitos anos com a camisa do Corinthians");
-    InsereSim(p[13], j, "Gil Zagueiro");
+    // Array de ponteiros para node jogador
+    node *j[87];
+    for (int i = 0; i < 86; i++)
+    {
+        j[i] = nullptr;
+    }
+
+    Cria(p[0], "Ja ganhou algum titulo pelo clube?");
+
+    /////////// Bloco da pergunta 1 (3 filhos p4, p5, p6) ///////////
+    InsereSim(p[0], p[1], "Eh do setor defensivo?");
+
+    // Iníco Filho p4
+
+    // Início Filho p5
+
+    // Início Filho p6
+
+
+    /////////// Bloco da pergunta 2 (3 filhos p7, p8, p9) ///////////
+    InsereNaosei(p[0], p[2], "Eh do setor defensivo?");
+
+    // Iníco Filho p7
+
+    // Início Filho p8
+
+    // Início Filho p9
+
+
+    /////////// Bloco da pergunta 3 (3 filhos p10, p11, p12) ///////////
+    InsereNao(p[0], p[3], "Eh do setor defensivo?");
+
+    // Iníco Filho p10
+
+    // Início Filho p11
+
+    // Início Filho p12
+
+
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // Console do game
 
     cout << endl;
     cout << endl;
     cout << "================================================" << endl;
-    cout << "                  AdivinhaTimao                 " << endl; // pesquisar o caracter de ã em ascii
+    cout << "                  AdivinhaTimao                 " << endl;
     cout << "================================================" << endl;
     cout << endl;
     cout << "Advinha Timao eh um jogo cativante que desafia os fas do Corinthians a testarem seus conhecimentos sobre o elenco do time de 2023." << endl;
