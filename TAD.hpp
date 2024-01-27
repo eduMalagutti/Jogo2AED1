@@ -1,4 +1,4 @@
-//TAD_arvore2.hpp
+// TAD_arvore.hpp
 #include <iostream>
 using namespace std;
 
