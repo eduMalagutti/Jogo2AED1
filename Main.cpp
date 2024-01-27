@@ -196,8 +196,8 @@ int main()
     InsereNaosei(p[35], p[36], "Argentino? (Que passa Manito)");
     InsereNao(p[35], p[36], "Argentino? (Que passa Manito)");
     InsereSim(p[36], j[30], "Fausto Vera");
-    InsereNaosei(p[36], p[37], "Substituto do Balbuena");
-    InsereNao(p[36], p[37], "Substituto do Balbuena");
+    InsereNaosei(p[36], p[37], "Substituto do Balbuena?");
+    InsereNao(p[36], p[37], "Substituto do Balbuena?");
     InsereSim(p[37], j[31], "Verissimo");
     InsereNaosei(p[37], j[32], "Verissimo");
     InsereNao(p[37], j[32], "Verissimo");
@@ -281,8 +281,8 @@ int main()
     InsereNaosei(p[50], p[51], "Argentino? (Que passa manito)");
     InsereNao(p[50], p[51], "Argentino? (Que passa manito)");
     InsereSim(p[51], j[47], "Fausto Vera");
-    InsereNaosei(p[51], p[52], "Substituto do Balbuena");
-    InsereNao(p[51], p[52], "Substituto do Balbuena");
+    InsereNaosei(p[51], p[52], "Substituto do Balbuena?");
+    InsereNao(p[51], p[52], "Substituto do Balbuena?");
     InsereSim(p[52], j[48], "Verissimo");
     InsereNaosei(p[52], p[53], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
     InsereNao(p[52], p[53], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
@@ -339,8 +339,8 @@ int main()
     InsereNaosei(p[50], p[51], "Argentino? (Que passa manito)");
     InsereNao(p[50], p[51], "Argentino? (Que passa manito)");
     InsereSim(p[51], j[47], "Fausto Vera");
-    InsereNaosei(p[51], p[52], "Substituto do Balbuena");
-    InsereNao(p[51], p[52], "Substituto do Balbuena");
+    InsereNaosei(p[51], p[52], "Substituto do Balbuena?");
+    InsereNao(p[51], p[52], "Substituto do Balbuena?");
     InsereSim(p[52], j[48], "Verissimo");
     InsereNaosei(p[52], p[53], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
     InsereNao(p[52], p[53], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
@@ -472,8 +472,8 @@ int main()
     InsereNaosei(p[70], p[71], "Argentino? (Que passa Manito)");
     InsereNao(p[70], p[71], "Argentino? (Que passa Manito)");
     InsereSim(p[71], j[71], "Fausto Vera");
-    InsereNaosei(p[71], p[72], "Substituto do Balbuena");
-    InsereNao(p[71], p[72], "Substituto do Balbuena");
+    InsereNaosei(p[71], p[72], "Substituto do Balbuena?");
+    InsereNao(p[71], p[72], "Substituto do Balbuena?");
     InsereSim(p[72], j[72], "Verissimo");
     InsereNaosei(p[72], p[73], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
     InsereNao(p[72], p[73], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
@@ -509,8 +509,8 @@ int main()
     InsereNaosei(p[70], p[71], "Argentino? (Que passa Manito)");
     InsereNao(p[70], p[71], "Argentino? (Que passa Manito)");
     InsereSim(p[71], j[71], "Fausto Vera");
-    InsereNaosei(p[71], p[72], "Substituto do Balbuena");
-    InsereNao(p[71], p[72], "Substituto do Balbuena");
+    InsereNaosei(p[71], p[72], "Substituto do Balbuena?");
+    InsereNao(p[71], p[72], "Substituto do Balbuena?");
     InsereSim(p[72], j[72], "Verissimo");
     InsereNaosei(p[72], p[73], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
     InsereNao(p[72], p[73], "Eh Calvo? (Tem duas entradas pro show da Taylor Swift)");
